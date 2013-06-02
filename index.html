@@ -319,6 +319,83 @@
         <span class="footnote">$this->load->helper('form')</span>
     </div>
 
+    <div id="security" class="step" data-x="2000" data-y="-3000" data-rotate="500" data-scale="5">
+        <p><b>Segurança</b></p>
+        <pre>
+            <code>
+$config['encryption_key'] = '';
+$config['global_xss_filtering'] = FALSE;
+$config['csrf_protection'] = FALSE;
+            </code>
+        </pre>
+    </div>
+
+    <div id="language" class="step" data-x="7000" data-y="-1200" data-rotate="0" data-scale="1">
+        <p><b>Gestão de Línguas</b></p>
+        <pre>
+            <code>
+// Load
+$this->lang->load('filename', 'language');
+
+// Ficheiro de língua
+$lang['language_key'] = "A mensagem";
+
+            </code>
+        </pre>
+    </div>
+
+
+    <div id="forms" class="step" data-x="10000" data-y="-1200" data-rotate="0" data-scale="5">
+        <p><b>Formulários</b></p>
+        <pre>
+            <code>
+form_open('url', 'class="foobar"');
+
+form_close();
+            </code>
+        </pre>
+    </div>
+
+    <div id="git" class="step" data-x="10000" data-y="1000" data-rotate="90" data-scale="1">
+        <p><b>GIT / GIT-Flow</b></p>
+    </div>
+
+
+    <div id="git1" class="step" data-x="9000" data-y="1000" data-rotate="90" data-scale="1">
+        <p><b>Git == Versionamento distribuido</b></p>
+    </div>
+
+    <div id="git2" class="step" data-x="8000" data-y="1000" data-rotate="180" data-scale="1">
+        <p><b>Boas Práticas</b></p>
+        <ul>
+            <li>- Dividir trabalho por tarefas</li>
+            <li>- Fazer commit's expressivos</li>
+            <li>- Manter um histórico limpo</li>
+            <li>- Não fazer comits a meio da tarefa</li>
+            <li>- Trabalhar por branchs</li>
+        </ul>
+    </div>
+
+    <div id="git3" class="step" data-x="7000" data-y="0" data-rotate="260" data-scale="1">
+        <p><b>Evitar</b></p>
+        <ul>
+            <li>- Editores de texto com configurações diferentes</li>
+            <li>- Encoding de ficheiros diferentes</li>
+        </ul>
+    </div>
+
+
+    <div id="git4" class="step" data-x="6000" data-y="-1000" data-rotate="350" data-scale="3">
+        <p><b>Git-flow</b></p>
+        <p>Modo de branching que segue os padrões de desenvolvimento de software.</p>
+    </div>
+
+    <div id="git5" class="step" data-x="5000" data-y="-2000" data-rotate="0" data-scale="1">
+        <p><b><a href="http://jacovanstaden.files.wordpress.com/2011/03/git-flow-overview.jpg">Exemplo</a> </b></p>
+
+    </div>
+
+
     <!--
 
         So to make a summary of all the possible attributes used to position presentation steps, we have:
