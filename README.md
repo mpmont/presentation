@@ -51,7 +51,5 @@ ________
 * [Try Git](http://blog.marcomonteiro.net/post/31055926450/nothing-to-do-this-weekend-try-git)
 * [Git vs SVN](http://blog.marcomonteiro.net/post/30382607875/git-vs-svn-is-it-really-a-battle)
 * [Exemplo em como ter vários remotes pode ser bom](http://blog.marcomonteiro.net/post/29973110849/updating-your-codeigniter-installation-with-git)
-
-
 _____
 Copyright © 2013 Marco Monteiro • All Rights Reserved • [www.marcomonteiro.net](http://www.marcomonteiro.net/) • [Blog](http://blog.marcomonteiro.net/)
