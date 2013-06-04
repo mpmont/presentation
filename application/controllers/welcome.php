@@ -5,7 +5,8 @@ class Welcome extends CI_Controller {
 	public function index()
 	{
 		$this->load->model('article_model', 'article');
-		$this->load->view('welcome_message');
+		$data['articles'] = $this->article->get_all();
+		$this->load->view('welcome_message', $data);
 	}
 }
 
