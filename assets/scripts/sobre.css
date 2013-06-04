@@ -1,0 +1,129 @@
+/*--------------------------------------------------------------------
+LAYOUT - VISIT (modern browsers)
+
+Version: 	1.0 - 2012
+author: 	Burocratik (alexandre r. gomes)
+email: 		alex@burocratik.com / ama@burocratik.com
+website: 	http://www.burocratik.com
+-----------------------------------------------------------------------*/
+@import url(body.css);
+
+/*-------------------------------------------------------------------------
+= TIMELINE
+-------------------------------------------------------------------------*/
+#timeline{padding: 45px 0 90px;}
+/******* NAV *******/
+#timeline nav{
+	position: relative;	display: block; width: 810px; height: 99px; padding:0; margin: 0 auto 20px auto; 
+}
+#timeline nav .container{/* need absolute to become fixed without flicker*/
+	position: absolute; left:0; top: 0;  width: 810px; height: 99px; z-index: 10; 
+	background: #333333; overflow: hidden;
+}
+#timeline nav .container.fixed{position: fixed; top: 0; left:50%; margin:0 0 0 -405px;}
+/* .mobile #timeline nav .container.fixed{position: relative; top: 0; left:50%; margin:0 0 0 -405px;} */
+
+#timeline nav ul{position: relative; top: 38px; left:52px; overflow: hidden;}
+#timeline nav ul li{
+	display: block; position: relative; float: left; width: 234px;
+	font: 16px "visitAB", Helvetica, Arial, sans-serif; color: #8f8f8f;
+}
+#timeline nav ul li:nth-child(2){text-align: center;}
+#timeline nav ul li:last-child{text-align: right;}
+#timeline nav ul li a{
+	display: inline-block; position: relative;
+	font: 16px "visitAB", Helvetica, Arial, sans-serif; color: #8f8f8f;
+	transition: all 0.3s; -moz-transition: all 0.3s; -webkit-transition: all 0.3s; -o-transition: all 0.3s;
+}
+#timeline nav ul li a span{
+	display: block; position: relative; width: 23px; height: 9px; margin: 0 auto; margin-top: 0px;
+	font: 16px "visitAB", Helvetica, Arial, sans-serif; color: #8f8f8f; opacity: 0;
+	transition: all 0.3s; -moz-transition: all 0.3s; -webkit-transition: all 0.3s; -o-transition: all 0.3s;
+	background: url(../imgs/timeline-nav-bg.png) no-repeat center top;
+}
+/* RETINA DISPLAY */
+@media only screen and (-webkit-min-device-pixel-ratio : 1.5), only screen and (min-device-pixel-ratio : 1.5) {
+	#timeline nav ul li a span{
+		background: url(../imgs/timeline-nav-bg@2x.png) no-repeat center top;
+		background-size: 23px 9px;
+	}
+}
+
+#timeline nav ul li a:hover, #timeline nav ul li.on a{color: #FFF;}
+#timeline nav ul li a:hover span, #timeline nav ul li.on a span{margin-top: 10px; opacity: 1;}
+#timeline nav ul li.on a{cursor: default;}
+
+/******* ARTICLE *******/
+#timeline article{padding-bottom: 70px;}
+#timeline article h3{
+	display: block; width: 134px; padding: 9px 0; margin: 0 auto;
+	font: 17px "visitAR", Helvetica, Arial, sans-serif; color: #FFF; text-align: center;
+	-webkit-border-radius: 2px; -moz-border-radius: 2px; border-radius: 2px;
+	-webkit-box-shadow: 0 0 2px #adadad; -moz-box-shadow: 0 0 2px #adadad; box-shadow: 0 0 2px #adadad;
+}
+#timeline article ul{
+	display: block; width: 702px; padding: 17px 138px 0; 
+	margin: 0 auto; 
+}
+#timeline article ul li{display: block; position: relative; width: 100%; margin-top: 35px;}
+#timeline article ul li h4{
+	display: block; position: absolute; width: 48px; height: 23px;
+	/* ANIM =*/ opacity: 0; left: 390px;
+	top: 50%; margin-top: -16px; padding: 9px 0 0 25px;
+	font: 14px/14px "visitAR", Helvetica, Arial, sans-serif; color: #07c19c;
+	background: transparent url(../imgs/timeline-ano-bg.png) no-repeat left bottom;
+	-moz-transition: all 0.4s 0.2s; -webkit-transition: all 0.4s 0.2s; -o-transition: all 0.4s 0.2s; transition: all 0.4s 0.2s; 
+}
+#timeline article ul li p{
+	display: block; width: 300px; margin-left: -20px;
+	font: 13px/20px "visitAR", Helvetica, Arial, sans-serif; opacity: 0;
+	-moz-transition: all 0.5s 0.3s; -webkit-transition: all 0.5s 0.3s; -o-transition: all 0.5s 0.3s; transition: all 0.5s 0.3s; 
+}
+#timeline article ul li div{
+	display: table; position: absolute; width: 28px; height: 28px;
+	top: 50%; margin-top: -14px; left: 337px;
+}
+#timeline article ul li div span{
+	display: table-cell; width: 28px; height: 28px;
+	text-align: center; vertical-align: middle;
+	background: #dfdede; opacity: 1;
+	-moz-border-radius: 14px; -webkit-border-radius: 14px; border-radius: 14px;
+	-moz-transition: all 0.7s; -webkit-transition: all 0.7s; -o-transition: all 0.7s; transition: all 0.7s; 
+	-moz-transform: scale(0); -webkit-transform: scale(0); -o-transform: scale(0); transform: scale(0);
+}
+#timeline article ul li div img{
+	display: block; position: absolute; width: 20px; height: 20px;
+	left: 4px; top: 4px; opacity: 0;
+	-moz-transition: all 0.2s; -webkit-transition: all 0.2s; -o-transition: all 0.2s; transition: all 0.2s; 
+}
+
+/* RIGHT */
+#timeline article ul li.right h4{
+	left: 239px; padding: 9px 25px 0 0; text-align: right;
+	background-position: left top;
+}
+#timeline article ul li.right p{margin-left: 422px;}
+
+/* COLORS */
+#timeline article.time01{background: url(../imgs/timeline-green-bg.png) repeat-y center top;}
+#timeline article.time01 h3{background: #07c19c;}
+#timeline article.time01 ul li h4{color: #07c19c;}
+#timeline article.time02{background: url(../imgs/timeline-orange-bg.png) repeat-y center top;}
+#timeline article.time02 h3{background: #f48839;}
+#timeline article.time02 ul li h4{color: #f48839;}
+#timeline article.time03{background: url(../imgs/timeline-blue-bg.png) repeat-y center top;}
+#timeline article.time03 h3{background: #05aad9;}
+#timeline article.time03 ul li h4{color: #05aad9;}
+#timeline article.time04{background: url(../imgs/timeline-lightblue-bg.png) no-repeat center bottom;}
+#timeline article.time04 h3{background: #98d5e6;}
+#timeline article.time04 ul li h4{color: #98d5e6;}
+
+/* ANIMACAO */
+#timeline article ul li.goAnim h4{opacity: 1; left: 370px;}
+#timeline article ul li.goAnim.right h4{left: 259px;}
+
+#timeline article ul li.goAnim p{margin-left: 0px; opacity: 1;}
+#timeline article ul li.goAnim.right p{margin-left: 402px;}
+
+#timeline article ul li.goAnim div span{-moz-transform: scale(2); -webkit-transform: scale(2); -o-transform: scale(2); -ms-transform: scale(2); transform: scale(2); opacity: 0;}
+#timeline article ul li.goAnim div img{opacity: 1;}

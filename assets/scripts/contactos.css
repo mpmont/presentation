@@ -1,0 +1,83 @@
+/*--------------------------------------------------------------------
+LAYOUT - VISIT (modern browsers)
+
+Version: 	1.0 - 2012
+author: 	Burocratik 
+email: 		ana@burocratik.com / alex@burocratik.com
+website: 	http://www.burocratik.com
+-----------------------------------------------------------------------*/
+@import url(body.css);
+
+/*----------------------------------------------------------------------*/
+.informacoes{padding-top: 45px}
+.informacoes h3{font: 28px/45px "visitAB", Helvetica, Arial, sans-serif; color: #ff4e1c; text-align: center; padding-bottom: 20px;}
+
+/* PROGRAMA */
+.programas ul{display: block; position: relative; width: 100%; height: 375px; margin-top: 50px;}
+.programas ul li{display: block; position: relative; float: left; width: 237px; height: 375px; overflow: visible; margin-right: 10px;}
+.programas ul li .bloco{
+	display: block; position: relative; float: left; width: 197px; min-height: 325px;
+	padding: 30px 20px 20px; text-align: center; z-index: 10;
+	transition: all 0.2s; -moz-transition: all 0.2s; -webkit-transition: all 0.2s; -o-transition: all 0.2s;
+}
+.programas ul li:last-child{margin-right: 0px;}
+.programas ul li:nth-child(1) .bloco{background: #0797c1;}
+.programas ul li:nth-child(2) .bloco{background: #07c19c;}
+.programas ul li:nth-child(3) .bloco{background: #f1ac35;}
+.programas ul li:last-child .bloco{background: #e0524f;}
+.programas ul li:hover .bloco{margin-top: -15px;}
+.programas ul li .sombra{
+	display: block; position: absolute; left: 0px; bottom: -15px; width: 237px; height: 25px;
+	opacity: 0; z-index: 0;
+	background: url(../imgs/visit-sombra-caixa.png) no-repeat center center;
+	transition: all 0.2s; -moz-transition: all 0.2s; -webkit-transition: all 0.2s; -o-transition: all 0.2s;
+}
+.programas ul li:hover .sombra{opacity: 1;}
+
+.programas ul li h4{font: 24px/24px "visitAB", Helvetica, Arial, sans-serif; color: #FFF;}
+.programas ul li h4 + p{
+	font: bold 34px/34px "visitNSB", Helvetica, Arial, sans-serif; color: #FFF; text-align: center;
+	padding-bottom: 25px; margin: 18px 0 25px;
+}
+.programas ul li p{text-align: left; font-size: 13px; line-height: 20px; color: #FFF;}
+.programas ul li p.rodape{
+	position: absolute; width: 237px; left: 0px; bottom: 25px;
+	font: 12px/14px "visitNSB", Helvetica, Arial, sans-serif; text-align: center; color: #FFF;
+	text-transform: uppercase;
+}
+.programas ul li p.rodape strong{font-family: "visitNB", Helvetica, Arial, sans-serif;}
+
+/* HORARIO */
+.horario{width: 700px; margin: 0 auto; background: #f6f6f6; padding: 35px 55px;}
+.horario p{font: 12px/14px "visitNSB", Helvetica, Arial, sans-serif; text-align: left; color: #8f8f8f; padding: 15px 0 0 15px;}
+.horario table {font: 12px/14px "visitNSB", Helvetica, Arial, sans-serif; text-align: center; width: 100%;}
+/* .horario table th, .horario table td{padding: 10px 15px; border-bottom: 1px dotted #aeaeae; vertical-align: middle;} */
+
+.horario table th, .horario table td{
+	/* padding: 10px 15px; */ border: none; border-bottom: 1px dotted #aeaeae; vertical-align: middle;
+	padding: 10px 14px;
+}
+.horario table th{text-transform: uppercase;}
+.horario table tr th.firstCol, .horario table tr td.firstCol{text-align: left; text-transform: uppercase;}
+.horario table tr th.firstCol{color: #ff4e1c;}
+.horario table tr td.firstCol{color: #8f8f8f;}
+.horario table tr.separador td{border-top: 1px solid #AEAEAE; border-bottom: none;}
+.horario table tr.separador td.firstCol{color: #ff4e1c;}
+
+
+/* CONTACTOS */
+section.contactos{width: 100%; margin: 0;}
+section.contactos #mapaID{width: 100%; height: 530px; background: #f6f6f6;}
+section.contactos #mapaID div{line-height: 20px;}
+section.contactos article{margin: 0 auto; width: 978px; text-align: center; padding: 60px 0; overflow: hidden;}
+section.contactos article h3{font: 28px/45px "visitAB", Helvetica, Arial, sans-serif; color: #ff4e1c;}
+section.contactos article h3 + p{margin-bottom:20px;}
+section.contactos article h4{font: 14px/22px "visitAB", Helvetica, Arial, sans-serif; color: #ff4e1c;}
+section.contactos article div{display: block; position: relative; float: left; width: 260px; text-align: left;}
+section.contactos article div.first{margin-left: 278px;}
+section.contactos article p.textOu{background: url(../imgs/textOu-bg.png) no-repeat center center; padding: 25px 0;}
+section.contactos article.bilhetes{padding: 30px 0 100px;}
+
+/***********************/
+strong {font-family: "visitAB", Helvetica, Arial, sans-serif;}
+a{color: #ff4e1c;}
