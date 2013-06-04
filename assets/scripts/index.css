@@ -1,0 +1,271 @@
+/*--------------------------------------------------------------------
+LAYOUT - VISIT (modern browsers)
+
+Version: 	1.0 - 2012
+author: 	Burocratik (alexandre r. gomes)
+email: 		alex@burocratik.com
+website: 	http://www.burocratik.com
+-----------------------------------------------------------------------*/
+@import url(body.css);
+
+/*----------------------------------------------------------------------*/
+
+
+/*-------------------------------------------------------------------------
+=HEADER PIC
+-------------------------------------------------------------------------*/
+#headerPic{
+	position: relative; width: 978px;	height:654px;	margin: 0 auto; line-height: 17px;
+	background: transparent url(../imgs/home-ilustracao-bg.png) no-repeat 20px 42px;
+}
+#headerPic .legenda{
+	display: block; position: absolute; left: 40px; top: 480px; width: 157px; height: 57px; text-indent: -5555px;
+	background: transparent url(../imgs/home-ilustracao-setas-circuito.png) no-repeat left bottom;
+}
+#headerPic .legenda.circuito{left: 40px; top: 480px;}
+#headerPic .legenda.pontos{left: 240px; top: 560px; background-image: url(../imgs/home-ilustracao-setas-pontos.png);}
+
+.en #headerPic .legenda{background: transparent url(../imgs/home-ilustracao-setas-circuito-en.png) no-repeat left bottom;}
+.en #headerPic .legenda.pontos{background-image: url(../imgs/home-ilustracao-setas-pontos-en.png);}
+
+.es #headerPic .legenda{background: transparent url(../imgs/home-ilustracao-setas-circuito-es.png) no-repeat left bottom;}
+.es #headerPic .legenda.pontos{background-image: url(../imgs/home-ilustracao-setas-pontos-es.png);}
+
+#headerPic .reload{
+	display: none; position: absolute; right: 43px; top: 351px; width: 28px; height: 20px;
+	text-indent: -5555px; z-index: 10;
+	background: #FFF url(../imgs/home-ilustracao-reload.png) no-repeat 0px -20px;
+}
+#headerPic .reload:hover{background-position: 0px -40px;}
+
+/*pins */
+.pin, .pin2{
+	position: absolute; width: 22px; height: 35px; cursor: pointer; z-index: 50; opacity: 0;
+	background: transparent url(../imgs/home-ilustracao-pin-shadow.png) no-repeat left bottom;
+	-moz-transition: all .15s ease-in-out; -webkit-transition: all .15s ease-in-out;
+	-o-transition: all .15s ease-in-out; transition: all .15s ease-in-out;
+}
+.pin p, .pin2 p{
+	display: block; position: absolute; width: 22px; height: 32px; text-indent: -5555px; /* margin-top: 3px; */ 
+	background: transparent url(../imgs/home-ilustracao-pin.png) no-repeat left bottom;
+	background-size: 22px 32px;
+	-moz-transition: margin .2s ease-in-out; -webkit-transition: margin .2s ease-in-out;
+	-o-transition: margin .2s ease-in-out; transition: margin .2s ease-in-out;
+	margin-top: -10px;
+}
+.pin.active:hover p, .pin2.active:hover p{margin-top: 1px;}
+
+.pin.active, .pin2.active{opacity: 1;}
+.pin.active p, .pin2.active p{margin-top: 3px;}
+
+
+/*Locais*/
+#local1{
+	position: absolute; width:100px; height: 47px; top: 328px; left: 838px;
+	background: transparent url(../imgs/home-ilustracao-passos-1.png) no-repeat 0 0;
+}
+#local1 .pin{top: -102px; left: -3px;}
+
+#local2{
+	position: absolute; width: 51px; height: 45px; top: 243px; left: 695px;
+	background: transparent url(../imgs/home-ilustracao-passos-2.png) no-repeat 0 0;
+}
+#local2 .pin{left: 40px; top: -92px;}
+#local3{
+	position: absolute; width:82px; height: 45px; top: 243px; left: 609px;
+	background: transparent url(../imgs/home-ilustracao-passos-3.png) no-repeat 0 0;
+}
+#local3 .pin{top: -42px; left: 19px;}
+#local3 .pin2{top: -165px; left: 15px;}
+
+#local4{
+	position: absolute; width:72px; height: 59px; top: 210px; left: 531px;
+	background: transparent url(../imgs/home-ilustracao-passos-4.png) no-repeat 0 0;
+}
+#local4 .pin{top: -184px; left: -20px;}
+
+#local5{
+	position: absolute; width:135px; height: 65px; top: 212px; left: 393px;
+	background: transparent url(../imgs/home-ilustracao-passos-5.png) no-repeat 0 0;
+}
+#local5 .pin{top: -75px; left: -30px;}
+
+#local6{
+	position: absolute; width:136px; height: 50px; left: 270px; top: 282px;
+	background: transparent url(../imgs/home-ilustracao-passos-6.png) no-repeat 0 0;
+}
+#local6 .pin{top: -109px; left: -105px;}
+
+#local7{
+	position: absolute; width:90px; height: 48px; left: 178px; top: 327px;
+	background: transparent url(../imgs/home-ilustracao-passos-7.png) no-repeat 0 0;
+}
+#local7 .pin{top: 1px; left: -60px;}
+
+#local8{
+	position: absolute; width:166px; height: 69px; left: 168px; top: 372px;
+	background: transparent url(../imgs/home-ilustracao-passos-8.png) no-repeat 0 0;
+}
+#local8 .pin{left: 152px; top: 22px;}
+
+#local9{
+	position: absolute; width: 187px; height: 103px; left: 338px; top: 370px;
+	background: transparent url(../imgs/home-ilustracao-passos-9.png) no-repeat 0 0;
+}
+#local9 .pin{left: 168px; top: -23px;}
+#local10{
+	position: absolute; width: 156px; height: 103px; left: 527px; top: 292px;
+	background: transparent url(../imgs/home-ilustracao-passos-10.png) no-repeat 0 0;
+}
+
+/*legendas*/
+#headerPic .balao{
+	display: block; width: 258px; height: 210px; position: absolute; top:-20px; left:0;
+	font: 15px "visitNSB", Helvetica, Arial, sans-serif; color: #ffffff; 
+	text-transform: uppercase; margin-left:15px; padding:0 0 0 10px; display: block; opacity: 1;
+}
+#headerPic .balao.left{margin-left:-15px; padding: 0 10px 0 0;}
+#headerPic .balao img{display: block;}
+#headerPic .balao figcaption{
+	position: relative; width: 248px; height: 53px;	background: #333333; 
+	text-align: center;line-height: 53px; margin:0 0 0 10px;  
+	-webkit-border-radius: 0px 0px 3px 3px; -moz-border-radius: 0px 0px 3px 3px; border-radius: 0px 0px 3px 3px;
+}
+#headerPic .balao.left figcaption{margin:0 10px 0 0;}
+
+
+#local1 .balao{top:-16px; left:-262px;}
+#local2 .balao{top:-16px; left:-262px;}
+#local3 .balao{top:-16px; left:-262px;}
+#local3 .pin2 .balao{top:-16px; left:15px;}
+#local4 .balao{top:-16px; left:15px;}
+#local5 .balao{top:-16px; left:17px;}
+#local6 .balao{top:-16px; left:15px;}
+#local7 .balao{top:-16px; left:-262px;}
+#local8 .balao{top:-16px; left:-262px;}
+#local9 .balao{top:-16px; left:15px;}
+
+/*frases*/
+#headerPic .frases{
+	position: absolute;	top:225px; left:430px;display: table; z-index: 50;
+	width: 152px; height: 152px; border-radius: 50% 50%; background: rgba(58,57,57,.1);
+	font: 13px/15px "visitAR", Helvetica, Arial, sans-serif; color: #4c4c4c;
+}
+.mac #headerPic .frases{font: 13px/15px "visitAI", Helvetica, Arial, sans-serif;}
+#headerPic .frases p{display: table-cell; text-align: center; vertical-align: middle;}
+#headerPic .frases p strong{display: block; font: 45px/40px "visitNB", Helvetica, Arial, sans-serif; color: #fc4827;}
+
+
+/*video*/
+#clickvideo{position: absolute; bottom: 70px; right:121px; height: 142px;}
+#clickvideo a{
+	position: relative;	display: inline-block; width:144px; height: 142px; text-indent: -5555px;
+	background: transparent url(../imgs/home-btn-playvideo.png) no-repeat left top;
+	background-size: 144px;
+}
+#clickvideo a span{
+	position: absolute; top:0; left:0; display: block;
+	width:144px; height: 142px; opacity:0;
+	background: transparent url(../imgs/home-btn-playvideo.png) no-repeat left bottom;
+	background-size: 144px;
+	-moz-transition: opacity .15s linear; -webkit-transition: opacity .15s linear;
+	-o-transition: opacity .15s linear; transition: opacity .15s linear; 		
+}
+#clickvideo a:hover span{opacity:1;}
+#clickvideo em{position: absolute; top: 35%; display: block; right: -116px;}
+.en #clickvideo em{right: -100px!important;}
+
+
+/*-------------------------------------------------------------------------
+=CONTENT 
+-------------------------------------------------------------------------*/
+.bloco1{position: relative; float: left; width: 601px; padding: 0 15px 0 308px /* 32px */; -moz-transition: all .7s ease; -webkit-transition:  all .7s ease; -o-transition:  all .7s ease; transition: all .7s ease;}
+.bloco2{position: relative; float: left; width: 293px; /* background: purple; */}
+
+.bloco1 li{width:293px;}
+
+#content .destaque{padding: 0 0 15px 0; width: 601px; height: 407px;}
+#content .destaque a{padding: 0;}
+#content .destaque div{
+	-moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; 
+	height: 117px;  padding: 22px 22px 25px 22px;  
+	border-left:1px solid #e4e4e4; border-right:1px solid #e4e4e4; border-bottom:1px solid #e4e4e4;
+	font: 14px/17px "visitAR", Helvetica, Arial, sans-serif;	color: #4c4c4c; 
+}
+#content .destaque p{font: 14px/17px "visitAR", Helvetica, Arial, sans-serif;	color: #4c4c4c;}
+#content .destaque h3{font: 26px "visitAB", Helvetica, Arial, sans-serif; color: #333333;}
+#content .bloco1 li.longpic{
+	position: absolute; bottom: 15px; right: 15px; padding: 0; margin: 0; 
+}
+#content .bloco1 li.longpic a{padding: 0;}
+
+/* images*/
+#content figure{
+	position: relative; overflow: hidden;
+	-moz-transition: all .7s ease; -webkit-transition:  all .7s ease;
+	-o-transition:  all .7s ease; transition: all .7s ease; 	
+}
+#content figure.big{overflow: hidden; width:601px; height:290px;}
+#content figure.med{overflow: hidden; width:293px; height:407px;}
+#content figure.sml{overflow: hidden; width:293px; height:196px;}
+#content figure img{display: block;}
+#content figcaption{
+	position: absolute; left: 0; bottom:0; line-height: 0;
+	background: #ff4e1c; padding: 8px 18px 7px 18px;
+	font: 13px "visitNB", Helvetica, Arial, sans-serif; color:#ffffff; text-transform: uppercase;
+}
+#content figure.leftTop{position: absolute; top:0; left:0px;} 
+#content figure.leftDow{position: absolute; top:422px; left:0px;} 
+#content figure.rightTop{position: absolute; top:0; right:0px;} 
+#content figure.rightDow{position: absolute; top:422px; right:0px;}
+
+#content figure.midLeft{position: absolute; left: 308px; top: 633px;}
+#content figure.midTop{position: absolute; left: 616px; top: 422px;}
+#content figure.midBottom{position: absolute; left: 616px; bottom: -151px;}
+
+#wrapper{
+	-moz-transition: all .7s ease; -webkit-transition:  all .7s ease;
+	-o-transition:  all .7s ease; transition: all  .7s ease; 	
+}
+#content{width: 1525px; -moz-transition: all .7s ease; -webkit-transition:  all .7s ease; -o-transition:  all .7s ease; transition: all .7s ease;}
+
+@media only screen and (max-width: 1250px) {
+	#wrapper{padding-bottom: 450px;}
+	#content{width: 909px;}
+	.bloco1{padding: 0 15px 0 0px;}
+	#content figure.leftTop{position: absolute; left:0px; top:844px;} 
+	#content figure.leftDow{position: absolute; left:308px; top:844px;} 
+	#content figure.rightTop{position: absolute; right:0px; top:844px;} 
+	#content figure.rightDow{position: absolute; right: 308px; top:1055px;}
+	#content figure.midLeft{position: absolute; left: 0px; top: 633px;}
+	#content figure.midTop{position: absolute; left: 308px; top: 422px;}
+	#content figure.midBottom{position: absolute; left: 308px; bottom: -151px;}
+} 
+@media only screen and (min-width: 1251px) and (max-width: 1555px) {
+	#wrapper{padding-bottom: 261px;}
+	#content{width: 1217px; /* background: yellow; */}
+	#content figure.rightTop{position: absolute; top: 633px; right: 308px;} 
+	#content figure.rightDow{position: absolute; top: 844px; right: 616px;}
+	#content figure.midLeft{position: absolute; top: 633px; left: 308px;}
+	#content figure.midBottom{position: absolute; bottom: -151px; left: 0px;}
+} 
+/* RETINA DISPLAY */
+@media only screen and (-webkit-min-device-pixel-ratio : 1.5), only screen and (min-device-pixel-ratio : 1.5) {
+	#headerPic{
+		background: transparent url(../imgs/home-ilustracao-bg@2x.png) no-repeat 20px 42px;
+		background-size: 978px 545px;
+	}
+}
+
+#content a{
+	padding: 0; margin: 0; padding: 0 15px 15px 0; 
+	display: block; overflow: hidden; 
+}
+#content a img{
+	margin-top:-10px;
+	-moz-transition: margin .7s ease; -webkit-transition: margin .7s ease;
+	-o-transition: margin .7s ease; transition: margin .7s ease; 	 		
+}
+#content a:hover img{margin-top:0;}
+
+

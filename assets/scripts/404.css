@@ -1,0 +1,102 @@
+/*--------------------------------------------------------------------
+LAYOUT - VISIT (modern browsers)
+
+Version: 	1.0 - 2012
+author: 	Burocratik (alexandre r. gomes)
+email: 		alex@burocratik.com
+website: 	http://www.burocratik.com
+-----------------------------------------------------------------------*/
+@import url(body.css);
+
+/*----------------------------------------------------------------------*/
+
+
+/*-------------------------------------------------------------------------
+=HEADER PIC
+-------------------------------------------------------------------------*/
+#headerPic{
+	position: relative; width: 978px; height: 600px; margin: 0 auto; line-height: 17px;
+	background: transparent url(../imgs/home-ilustracao-bg.png) no-repeat 20px 42px;
+}
+
+/*pins */
+.pin{
+	position: absolute; width: 22px; height: 35px; z-index: 50; opacity: 0;
+	background: transparent url(../imgs/home-ilustracao-pin-shadow.png) no-repeat left bottom;
+	-moz-transition: all .15s ease-in-out; -webkit-transition: all .15s ease-in-out;
+	-o-transition: all .15s ease-in-out; transition: all .15s ease-in-out;
+}
+.pin p{
+	display: block; position: absolute; width: 22px; height: 32px; text-indent: -5555px; /* margin-top: 3px; */ 
+	background: transparent url(../imgs/404-ilustracao-pin.png) no-repeat left bottom;
+	background-size: 22px 32px;
+	-moz-transition: margin .2s ease-in-out; -webkit-transition: margin .2s ease-in-out;
+	-o-transition: margin .2s ease-in-out; transition: margin .2s ease-in-out;
+	margin-top: -10px;
+}
+.pin.active{opacity: 1;}
+.pin.active p{margin-top: 3px;}
+
+/*Locais*/
+#local1{
+	position: absolute; width:100px; height: 47px; top: 328px; left: 838px;
+	background: transparent url(../imgs/home-ilustracao-passos-1.png) no-repeat 0 0;
+}
+#local2{
+	position: absolute; width: 51px; height: 45px; top: 243px; left: 695px;
+	background: transparent url(../imgs/home-ilustracao-passos-2.png) no-repeat 0 0;
+}
+#local3{
+	position: absolute; width:82px; height: 45px; top: 243px; left: 609px;
+	background: transparent url(../imgs/home-ilustracao-passos-3.png) no-repeat 0 0;
+}
+#local3 .pin{left: -14px; top: -3px;}
+
+#local4{
+	position: absolute; width:72px; height: 59px; top: 210px; left: 531px;
+	background: transparent url(../imgs/home-ilustracao-passos-4.png) no-repeat 0 0;
+}
+#local5{
+	position: absolute; width: 259px; height: 120px; top: 212px; left: 268px;
+	background: transparent url(../imgs/404-ilustracao-passos-5.png) no-repeat 0 0;
+}
+#local7{
+	position: absolute; width:90px; height: 48px; left: 178px; top: 327px;
+	background: transparent url(../imgs/home-ilustracao-passos-7.png) no-repeat 0 0;
+}
+#local7 .pin{ left: -20px; top: 20px;}
+#local8{
+	position: absolute; width:166px; height: 69px; left: 168px; top: 372px;
+	background: transparent url(../imgs/home-ilustracao-passos-8.png) no-repeat 0 0;
+}
+#local9{
+	position: absolute; width: 187px; height: 103px; left: 340px; top: 368px;
+	background: transparent url(../imgs/404-ilustracao-passos-9.png) no-repeat 0 0;
+}
+#local9 .pin{left: 168px; top: -23px;}
+#local10{
+	position: absolute; width: 156px; height: 103px; left: 527px; top: 292px;
+	background: transparent url(../imgs/home-ilustracao-passos-10.png) no-repeat 0 0;
+}
+
+/*-------------------------------------------------------------------------
+=FOOTER
+-------------------------------------------------------------------------*/
+footer{
+	position: relative; width: 100%; min-height: 400px; clear: both;
+	background: transparent url(../imgs/footer-bg.gif) repeat-x;
+}
+footer section{position: relative; width: 978px; height: 91px; margin: 0 auto;}
+
+footer section h3{
+	position: relative; float: left; width:  190px; padding-top: 18px;
+	font: 46px "visitNB",Helvetica, Arial, sans-serif; color: #ffffff; text-transform: uppercase;
+}
+footer section div{
+	display: block; float: left; padding: 24px 0 0 0; /* margin: -43px 30px 0 0; */ width: 700px; overflow: hidden;
+	
+	
+}
+footer section h4{font: 18px/23px "visitNB",Helvetica, Arial, sans-serif; color: #FFF;}
+footer section div p{width: 700px; height: 17px; overflow: hidden; white-space:normal;font: 13px/17px "visitNSB",Helvetica, Arial, sans-serif; color: #ffc6b6; white-space: nowrap;}
+
